@@ -75,5 +75,11 @@ $docker pull jupyter/r-notebook:r-4.2.2
 $docker run -it -p 8888:8888 --name r-container jupyter/r-notebook:r-4.2.2
 ```
 
+### Crear ambiente para correr R en jupyter-notebook que contenga Tensorflow y Keras (para más detalle podemos ver un [ejemplo](R/r-keras/README.md))
+```console
+$docker pull kaggle/rstats
+$docker run -it -p 8085:8085 --name r-container kaggle/rstats
+```
+
 
 
