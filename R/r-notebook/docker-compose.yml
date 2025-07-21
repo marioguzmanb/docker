@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  r-notebook:
+    build:
+      context: ./r-notebook
+    container_name: r-notebook
+    ports:
+      - "8085:8085"
+    volumes:
+      - ./notebooks/r-notebook:/home/jovyan/work
+    restart: unless-stopped 
