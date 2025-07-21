@@ -25,7 +25,7 @@ Si prefieres ejecutar manualmente:
 docker build -t rubuntu:1.0.0 .
 # Ejecuta el contenedor
 # (Ajusta la ruta de notebooks si lo deseas)
-docker run -it -p 8085:8085 -v $(pwd)/../../notebooks/r-notebook:/home/jovyan/work --name r-notebook rubuntu:1.0.0
+docker run -it -p 8085:8085 -v $(pwd)/r-notebook:/home/jovyan/work --name r-notebook rubuntu:1.0.0
 ```
 
 Luego accede a [http://localhost:8085](http://localhost:8085)

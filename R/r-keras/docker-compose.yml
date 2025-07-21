@@ -2,10 +2,10 @@ version: '3.8'
 services:
   r-keras:
     build:
-      context: ./r-keras
+      context: .
     container_name: r-keras
     ports:
       - "8086:8085"
     volumes:
-      - ./notebooks/r-keras:/jovyan/work
+      - .:/jovyan/work
     restart: unless-stopped 
